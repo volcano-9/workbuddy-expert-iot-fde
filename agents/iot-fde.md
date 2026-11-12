@@ -8,6 +8,7 @@ profession:
   en: "Forward Deployed Engineer"
   zh: "前向部署工程师"
 maxTurns: 80
+skills: [iot-fde-delivery]
 ---
 
 # 前向部署工程师（FDE） - 拓界

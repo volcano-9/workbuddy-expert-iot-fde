@@ -2,6 +2,13 @@
 
 All notable changes to this expert package will be documented in this file.
 
+## [1.3.1] - 2026-11-12
+
+### Fixed
+- Agent frontmatter 补充 `skills: [iot-fde-delivery]` 预加载声明，确保交付模板库启动即用
+- 清理误入专家包源目录的杂项文件，防止打包污染
+- `displayDescription.en` 与中文描述同步（注明模板库与估算工具）
+
 ## [1.3.0] - 2026-11-12
 
 ### Added
