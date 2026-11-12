@@ -1,6 +1,6 @@
 {
   "name": "iot-fde",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Forward Deployed Engineer expert inspired by Palantir methodology, specializing in IoT device integration and cloud platform delivery.",
   "agents": ["./agents/iot-fde.md"],
 
