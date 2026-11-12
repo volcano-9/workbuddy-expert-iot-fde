@@ -6,6 +6,8 @@
 
 深入客户现场挖掘真实需求、建模数据、快速构建原型，专精**物联网设备接入**与**云平台项目交付落地**的实战型工程师专家。
 
+> **English**: A WorkBuddy expert agent modeled on Palantir's Forward Deployed Engineer (FDE) methodology — embeds with customers on-site to mine real requirements, model messy device data, and deliver IoT cloud platform projects. Ships with 5 structured delivery templates and a data-volume estimator script.
+
 ## ✨ 核心能力
 
 | 能力 | 说明 |
@@ -56,6 +58,33 @@ python scripts/register_expert.py \
 
 问：「帮我们厂的设备接上云平台」——专家不会直接甩一份通用方案，而是先确认理解，再定向追问 3 个关键问题（业务目标 / 设备与数据现状 / 网络与预算约束），拿到信息后按模板产出《现场调研计划》，关键缺失字段一律标注 `[待确认：xxx]`，绝不编造客户数据。
 
+<details>
+<summary>📋 点击展开：典型的《现场调研计划》输出片段</summary>
+
+```markdown
+## 现场调研计划
+
+### 1. 调研目标
+确认 XX 车间 3 类设备（[待确认：设备清单]）的数据采集可行性与接入方式，
+评估与现有 MES 系统的对接条件。
+
+### 2. 访谈安排
+| 对象 | 角色 | 核心问题 | 时长 |
+|------|------|----------|------|
+| 生产负责人 | 业务侧 | 上云要什么结果？考核指标是什么？ | 30min |
+| 班组长 | 执行侧 | 现在数据怎么记？多久记一次？痛点在哪？ | 45min |
+| 自动化工程师 | 技术侧 | 设备协议/点表/网络拓扑/安评流程 | 60min |
+
+### 3. 数据采样清单
+| 采样项 | 获取方式 | 用途 |
+|--------|----------|------|
+| 设备台账 | 客户提供 Excel | 协议适配评估 |
+| 点表 / PLC 变量表 | 自动化工程师 | 数据建模 |
+| 历史数据样例（1 天） | 现有系统导出 | 数据质量摸底 |
+```
+
+</details>
+
 ## 🗂 仓库结构
 
 ```
@@ -67,7 +96,9 @@ workbuddy-expert-iot-fde/
 ├── skills/
 │   └── iot-fde-delivery/
 │       ├── SKILL.md               # 交付模板使用规则
-│       └── templates/             # 5 份交付文档模板（调研/盘点/方案/上线/复盘）
+│       ├── templates/             # 5 份交付文档模板（调研/盘点/方案/上线/复盘）
+│       └── scripts/
+│           └── estimate_data_volume.py   # 数据量/带宽估算工具
 ├── avatars/
 │   └── expert.png                 # 头像（512×512 PNG）
 ├── CHANGELOG.md

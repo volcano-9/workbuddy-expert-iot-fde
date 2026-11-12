@@ -2,6 +2,19 @@
 
 All notable changes to this expert package will be documented in this file.
 
+## [1.3.0] - 2026-11-12
+
+### Added
+- **数据量估算工具** `skills/iot-fde-delivery/scripts/estimate_data_volume.py`：输入设备数/点位数/采样间隔，输出日消息量、月存储量与平均带宽估算
+- **第二个 few-shot 示例**：覆盖"项目卡住 → 直达 Phase 4 根因分析"的高频路由路径
+- README 英文简介与折叠式完整输出示例
+
+### Changed
+- `maxTurns` 50 → 80（长文档多轮交付不再中途截断）
+- Phase 4 / Phase 5 补齐"触发"字段，五阶段结构对齐
+- frontmatter description 扩充中英文触发词（rollout plan、点表、设备上云、验收标准等）
+- `displayDescription` 更新，注明内置交付模板库
+
 ## [1.2.0] - 2026-11-12
 
 ### Added

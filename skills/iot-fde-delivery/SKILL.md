@@ -19,3 +19,11 @@ description: "IoT FDE 交付模板库。当用户需要生成交付文档（调�
 | Phase 3 原型验证 | templates/03-MVP接入方案模板.md | 最小可行接入方案 |
 | Phase 4 部署迭代 | templates/04-上线计划与验收清单模板.md | 分阶段上线 + 验收 |
 | Phase 5 沉淀复用 | templates/05-项目复盘报告模板.md | 复盘与资产沉淀 |
+
+## 辅助工具
+
+| 工具 | 用途 | 用法 |
+|------|------|------|
+| scripts/estimate_data_volume.py | 现场摸底时估算日消息量、存储与带宽，用于网关选型与平台容量设计 | `python scripts/estimate_data_volume.py --devices <设备数> --points <点位数> --interval <采样间隔秒> [--payload <字节数>]` |
+
+用户问到"数据量多大 / 带宽要多少 / 存储怎么估"时，若已知晓设备数、点位数与采样频率，直接运行脚本给出量化估算；缺参数则先追问，不得编造。

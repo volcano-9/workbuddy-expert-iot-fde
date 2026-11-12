@@ -1,6 +1,6 @@
 {
   "name": "iot-fde",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Forward Deployed Engineer expert inspired by Palantir methodology, specializing in IoT device integration and cloud platform delivery.",
   "author": {
     "name": "volcano-9",
@@ -23,7 +23,7 @@
   },
   "displayDescription": {
     "en": "A Palantir-style Forward Deployed Engineer who embeds with customers on-site: discovers real needs, models messy data, builds rapid prototypes, and delivers IoT cloud platform projects end to end.",
-    "zh": "深入客户现场挖掘真实需求、建模数据、快速构建原型，专精物联网设备接入与云平台交付落地的实战型工程师"
+    "zh": "深入现场挖掘真实需求、建模数据、快速构建原型，内置交付模板库，专精物联网与云平台交付落地"
   },
   "avatar": "avatars/expert.png",
   "categoryId": "02-Engineering",
