@@ -1,8 +1,14 @@
 {
   "name": "iot-fde",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Forward Deployed Engineer expert inspired by Palantir methodology, specializing in IoT device integration and cloud platform delivery.",
+  "author": {
+    "name": "volcano-9",
+    "email": "volcano-9@users.noreply.github.com"
+  },
+  "keywords": ["forward deployed engineer", "FDE", "IoT", "cloud platform", "delivery", "Palantir"],
   "agents": ["./agents/iot-fde.md"],
+  "skills": ["./skills/iot-fde-delivery"],
 
   "expertType": "agent",
   "agentName": "iot-fde",
@@ -34,6 +40,6 @@
   "quickPrompts": [
     { "en": "We have a new customer integrating with our IoT platform - help me draft an on-site discovery plan", "zh": "我们有一个新客户要接入物联网平台，帮我制定一份客户现场调研计划" },
     { "en": "On-site device data is messy with mixed protocols - help me design a data modeling and cleansing approach", "zh": "客户现场设备数据格式混乱、协议不统一，帮我设计数据建模与清洗方案" },
-    { "en": "The delivery project is stuck - analyze root causes and propose a recovery plan", "zh": "项目交付进度卡住了，帮我分析根因并给出推进策略" }
+    { "en": "Generate an MQTT vs OPC UA protocol selection comparison table for our factory project", "zh": "帮我生成一份 MQTT 与 OPC UA 的协议选型对比表，用于我们工厂接入项目" }
   ]
 }
