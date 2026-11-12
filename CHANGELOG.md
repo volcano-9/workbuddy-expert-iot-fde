@@ -9,6 +9,9 @@ All notable changes to this expert package will be documented in this file.
 - 清理误入专家包源目录的杂项文件，防止打包污染
 - `displayDescription.en` 与中文描述同步（注明模板库与估算工具）
 
+### Added
+- 行为测试报告（docs/behavioral-test-report.md）：两个快捷提示词场景实测通过，作为"运行正常"证据随包提交
+
 ## [1.3.0] - 2026-11-12
 
 ### Added
