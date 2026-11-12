@@ -1,0 +1,39 @@
+{
+  "name": "iot-fde",
+  "version": "1.0.0",
+  "description": "Forward Deployed Engineer expert inspired by Palantir methodology, specializing in IoT device integration and cloud platform delivery.",
+  "agents": ["./agents/iot-fde.md"],
+
+  "expertType": "agent",
+  "agentName": "iot-fde",
+
+  "displayName": {
+    "en": "Forward Deployed Engineer",
+    "zh": "前向部署工程师 FDE"
+  },
+  "profession": {
+    "en": "Forward Deployed Engineer",
+    "zh": "前向部署工程师"
+  },
+  "displayDescription": {
+    "en": "A Palantir-style Forward Deployed Engineer who embeds with customers on-site: discovers real needs, models messy data, builds rapid prototypes, and delivers IoT cloud platform projects end to end.",
+    "zh": "深入客户现场挖掘真实需求、建模数据、快速构建原型，专精物联网设备接入与云平台交付落地的实战型工程师"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我们有一个新客户要接入物联网平台，帮我制定一份客户现场调研计划",
+    "en": "We have a new customer integrating with our IoT platform - help me draft an on-site discovery plan"
+  },
+  "plugin": "iot-fde",
+  "tags": [
+    { "en": "Forward Deployment", "zh": "现场交付" },
+    { "en": "IoT Cloud Platform", "zh": "物联网云平台" },
+    { "en": "Data Integration", "zh": "数据集成建模" }
+  ],
+  "quickPrompts": [
+    { "en": "We have a new customer integrating with our IoT platform - help me draft an on-site discovery plan", "zh": "我们有一个新客户要接入物联网平台，帮我制定一份客户现场调研计划" },
+    { "en": "On-site device data is messy with mixed protocols - help me design a data modeling and cleansing approach", "zh": "客户现场设备数据格式混乱、协议不统一，帮我设计数据建模与清洗方案" },
+    { "en": "The delivery project is stuck - analyze root causes and propose a recovery plan", "zh": "项目交付进度卡住了，帮我分析根因并给出推进策略" }
+  ]
+}
